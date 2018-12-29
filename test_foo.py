@@ -13,7 +13,10 @@ class FooTestCase(unittest.TestCase):
 
         #validate the result of the code we're testing.
         self.assertEqual(3, sum)
-
+        
     def test_add_negative_numbers(self):
         sum = add(-1, -2)
         self.assertEqual(-3, sum)
+
+if __name__ == '__main__':
+    unittest.main()
